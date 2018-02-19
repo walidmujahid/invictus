@@ -79,6 +79,7 @@ public class RobotMap {
         driveTrainDrive.setMaxOutput(1.0);
 
         liftSpeedControllerLFT = new WPI_TalonSRX(7);
+        liftSpeedControllerLFT.setInverted(true);
         
         
         liftTopLimitSwitch = new DigitalInput(0);
