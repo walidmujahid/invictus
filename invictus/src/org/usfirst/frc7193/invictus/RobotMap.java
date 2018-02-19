@@ -52,6 +52,10 @@ public class RobotMap {
         
         
         cubeIntakeLeftManipulatorDriveLMD2 = new WPI_TalonSRX(6);
+        cubeIntakeLeftManipulatorDriveLMD2.configContinuousCurrentLimit(20, 0);
+        cubeIntakeLeftManipulatorDriveLMD2.configPeakCurrentLimit(21, 0);
+        cubeIntakeLeftManipulatorDriveLMD2.configPeakCurrentDuration(0, 0);
+        cubeIntakeLeftManipulatorDriveLMD2.enableCurrentLimit(true);
         
         
         driveTrainRightFrontDriveRD1 = new WPI_TalonSRX(1);
