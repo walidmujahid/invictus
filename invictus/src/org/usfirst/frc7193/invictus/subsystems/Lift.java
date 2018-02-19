@@ -57,7 +57,6 @@ public class Lift extends Subsystem {
     }
     
     public void MoveLift() {
-    	speedControllerLFT.
     }
     
     // Put methods for controlling this subsystem
