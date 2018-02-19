@@ -10,7 +10,11 @@
 
 
 package org.usfirst.frc7193.invictus.commands;
+
+import java.lang.System;
+
 import edu.wpi.first.wpilibj.command.Command;
+
 import org.usfirst.frc7193.invictus.Robot;
 
 /**
@@ -55,6 +59,7 @@ public class DriveRobot extends Command {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+//    	Robot.driveTrain.StopMotion();
     }
 
     // Called when another command which requires one or more of the same

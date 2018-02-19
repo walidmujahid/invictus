@@ -11,6 +11,8 @@
 
 package org.usfirst.frc7193.invictus.subsystems;
 
+import org.usfirst.frc7193.invictus.commands.DriveRobot;
+
 import edu.wpi.first.wpilibj.Joystick;
 
 import org.usfirst.frc7193.invictus.RobotMap;
@@ -54,6 +56,7 @@ public class DriveTrain extends Subsystem {
 
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
+    	setDefaultCommand(new DriveRobot());
     }
 
     @Override
