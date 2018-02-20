@@ -50,7 +50,7 @@ public class Climb extends Subsystem {
 
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
-    	setDefaultCommand(new TestMoveClimb());
+    	setDefaultCommand(new MoveClimb());
     }
 
     @Override
