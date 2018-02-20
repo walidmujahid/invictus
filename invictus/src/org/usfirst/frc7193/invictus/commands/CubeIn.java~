@@ -12,6 +12,9 @@
 package org.usfirst.frc7193.invictus.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc7193.invictus.Robot;
+import org.usfirst.frc7193.invictus.RobotMap;
+
+import com.ctre.phoenix.motorcontrol.ControlMode;
 
 /**
  *
@@ -38,11 +41,13 @@ public class CubeIn extends Command {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+		RobotMap.cubeIntakeRightManipulatorDriveRMD1.setExpiration(1);
     }
 
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+    	RobotMap.cubeIntakeRightManipulatorDriveRMD1.set(0.15);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -54,11 +59,14 @@ public class CubeIn extends Command {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+    	RobotMap.cubeIntakeRightManipulatorDriveRMD1.set(0.0);
+
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+    	end();
     }
 }
