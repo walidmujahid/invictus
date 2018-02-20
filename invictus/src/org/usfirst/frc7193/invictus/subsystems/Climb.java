@@ -61,27 +61,32 @@ public class Climb extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    
+    
     public void StartMotor() {
     	speedControllerCD1.set(ControlMode.PercentOutput, 0.1);
-    }
-    
-    public void RunMotorAtSetSpeed(Joystick joystick) {
-    	double posThreshold = 0.1;  //default threshold value from xBox Controller
-    	double dblPositive = joystick.getRawAxis(3);       
-    
-    	//display on dashboards
-    	SmartDashboard.putNumber("Motor Speed: ", dblPositive);
-    	
-    	//Positive motor rotation
-    	if(Math.abs(dblPositive) > posThreshold|| true) { 
-    		speedControllerCD1.set(ControlMode.PercentOutput,dblPositive);
-    	}
+	}
 
-    }
-    
-    public void StopMotor() {
-    	speedControllerCD1.set(ControlMode.PercentOutput, 0.0);
-    }
+	public void RunMotorAtSetSpeed(Joystick joystick) {
+		double posThreshold = 0.05;  //default threshold value from xBox Controller
+		double dblPositive = joystick.getY();       
+
+		//display on dashboards
+		SmartDashboard.putNumber("Motor Speed: ", dblPositive);
+
+		//Positive motor rotation
+		if(Math.abs(dblPositive) > posThreshold) {
+			speedControllerCD1.set(ControlMode.PercentOutput,dblPositive);
+		}
+		else {
+			speedControllerCD1.set(ControlMode.PercentOutput,0.0);
+		}
+
+	}
+
+	public void StopMotor() {
+		speedControllerCD1.set(ControlMode.PercentOutput, 0.0);
+	}
 
 
 }
