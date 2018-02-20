@@ -54,7 +54,7 @@ public class RobotMap {
 //        cubeIntakeLeftManipulatorDriveLMD2.configPeakCurrentLimit(21, 0);
 //        cubeIntakeLeftManipulatorDriveLMD2.configPeakCurrentDuration(0, 0);
 //        cubeIntakeLeftManipulatorDriveLMD2.enableCurrentLimit(true);
-        cubeIntakeLeftManipulatorDriveLMD2.follow(cubeIntakeRightManipulatorDriveRMD1);
+        cubeIntakeLeftManipulatorDriveLMD2.set(com.ctre.phoenix.motorcontrol.ControlMode.Follower, 5);
         cubeIntakeLeftManipulatorDriveLMD2.setInverted(true);
         
         
