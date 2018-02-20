@@ -44,7 +44,7 @@ public class TestMoveLift extends Command {
     @Override
     protected void execute() {
 //    	Robot.lift.RunMotorAtSetSpeed(Robot.oi.getOperatorControls());
-    	Robot.lift.StartMotor();
+    	
     }
 
     // Make this return true when this Command no longer needs to run execute()
