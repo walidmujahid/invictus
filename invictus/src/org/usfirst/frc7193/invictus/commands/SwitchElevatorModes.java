@@ -49,15 +49,15 @@ protected void initialize() {
 //Called repeatedly when this Command is scheduled to run
 @Override
 protected void execute() {
-	boolean result = Arrays.stream(Robot.elevatorModes).anyMatch("lift"::equals);
+//	boolean result = Arrays.stream(Robot.elevatorModes).anyMatch("lift"::equals);
 	
-	if (Robot.oi.operatorControls.getRawButtonPressed(2)) {
-		result = !result;
-		
-		if (result) {
-			
-		}
-	}
+//	if (Robot.oi.operatorControls.getRawButtonPressed(2)) {
+//		result = !result;
+//		
+//		if (result) {
+//			
+//		}
+//	}
 }
 
 //Make this return true when this Command no longer needs to run execute()

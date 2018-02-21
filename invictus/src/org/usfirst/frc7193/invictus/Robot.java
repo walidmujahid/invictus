@@ -56,7 +56,7 @@ public class Robot extends TimedRobot {
         lift = new Lift();
         climb = new Climb();
         
-        String[] elevatorModes = new String[] {"lift", "climb"};
+//        String[] elevatorModes = new String[] {"lift", "climb"};
 
         
 //        Subsystem[] modes = new Subsystem[] {lift, climb};

@@ -55,7 +55,7 @@ public class RobotMap {
 //        cubeIntakeLeftManipulatorDriveLMD2.configPeakCurrentDuration(0, 0);
 //        cubeIntakeLeftManipulatorDriveLMD2.enableCurrentLimit(true);
         cubeIntakeLeftManipulatorDriveLMD2.set(com.ctre.phoenix.motorcontrol.ControlMode.Follower, 5);
-        cubeIntakeLeftManipulatorDriveLMD2.setInverted(true);
+//        cubeIntakeLeftManipulatorDriveLMD2.setInverted(true);
         
         
         driveTrainRightFrontDriveRD1 = new WPI_TalonSRX(1);

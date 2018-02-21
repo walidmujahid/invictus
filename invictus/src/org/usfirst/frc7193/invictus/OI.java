@@ -73,7 +73,7 @@ public class OI {
 //        buttonSwitchToLift = new JoystickButton(operatorControls, 2);
 //        buttonSwitchToLift.whenPressed(new MoveLift());
         
-        SwitchElevatorModesButton = new JoystickButton(operatorControls, 2);
+//        SwitchElevatorModesButton = new JoystickButton(operatorControls, 2);
 //        SwitchElevatorModesButton.whenPressed(new SwitchElevatorModes());
         
         cubeShootButton = new JoystickButton(operatorControls, 1);
